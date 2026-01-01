@@ -54,13 +54,16 @@
         "vite": "6.3.5",
         "electron": "^26.0.0",
         "electron-builder": "^24.6.0",
-        "wait-on": "^7.0.1"
+        "wait-on": "^7.0.1",
+        "gh-pages": "^5.0.0"
     },
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "electron:run": "npm run build && electron .",
         "electron:build": "npm run build && electron-builder --win --x64"
+        ,"predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "build": {
         "appId": "com.multiply.show",
