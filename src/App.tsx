@@ -35,6 +35,16 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
       <div className="max-w-4xl mx-auto">
+        <div className="flex justify-end mb-2">
+          <a 
+            href="https://michael.blog.csdn.net/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-indigo-600 hover:text-indigo-800 text-sm font-medium"
+          >
+            作者网站
+          </a>
+        </div>
         <h1 className="text-center text-indigo-900 mb-8">
           乘法竖式计算演示
         </h1>
